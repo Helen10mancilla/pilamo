@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Pilamo | Restaurante & Motel de Lujo</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;500;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <script src="./tailwind-config.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display antialiased">
+    <!-- Top Navigation Bar -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-white/5 dark:border-white/10">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="size-8 text-primary">
+                    <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </div>
+                <h1 class="text-xl font-black tracking-wider uppercase">PILAMO</h1>
+            </div>
+
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="text-sm font-medium hover:text-primary transition-colors nav-link" href="#home">Inicio</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors nav-link"
+                    href="#services">Servicios</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors nav-link"
+                    href="#gastronomy">Gastronomía</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors nav-link" href="#suites">Suites</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors nav-link"
+                    href="#booking">Reservas</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors nav-link"
+                    href="#contact">Contacto</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <button
+                    class="bg-primary text-black px-6 py-2.5 rounded-lg text-sm font-bold tracking-wide hover:opacity-90 transition-opacity book-now-btn">
+                    RESERVAR
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+        <!-- Home & Overview Section -->
+        <section id="home" class="section">
+            <!-- Hero Section -->
+            <div class="relative h-[85vh] w-full overflow-hidden">
+                <div class="absolute inset-0 bg-cover bg-center" data-alt="Atmospheric night view of luxury bar lounge"
+                    style="background-image: linear-gradient(to bottom, rgba(10, 15, 11, 0.4), rgba(10, 15, 11, 0.95)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuCeoMLa7sKWg13qkXjSdFGzab-q6WldhtLYm7Kb87EongvHIyK73gj1Ror74DnvFo1fxZBBIdWHkWRVTmcw-zC_LPe7PyYNTnm3XWXFXXSp0xRGx42J9ALfhUV-wuPXEq9_AIEnfZ-3FOQW378cjD8fo4bQe4_Jz4bYg1PTEPvm0jLM-qwWlXsfiOgIEIijvYDeiex3VGPy6qjeXuOoqQ5o5utP9pIlQnsTTRimkIVtQU8k24Kh1xkrqBSANz5cBplwRMagvUKTFZwb')">
+                </div>
+                <div
+                    class="relative h-full max-w-7xl mx-auto px-6 flex flex-col items-center justify-center text-center">
+                    <span class="text-primary font-bold tracking-[0.3em] uppercase mb-4 text-sm">Bienvenido a
+                        Pilamo</span>
+                    <h2 class="text-white text-5xl md:text-7xl font-black leading-tight tracking-tighter mb-6">
+                        Exclusividad en <br /> <span class="text-primary italic">cada rincón</span>
+                    </h2>
+                    <p class="text-slate-300 text-lg md:text-xl max-w-2xl mb-10 font-light">
+                        Vive la experiencia definitiva de lujo y sabor en el corazón de la vida nocturna.
+                        Gastronomía de autor y mixología de clase mundial.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button
+                            class="bg-primary text-black h-14 px-10 rounded-lg text-base font-bold tracking-wide hover:scale-105 transition-transform scroll-to-booking">
+                            RESERVAR AHORA
+                        </button>
+                        <button
+                            class="bg-white/10 backdrop-blur-md text-white border border-white/20 h-14 px-10 rounded-lg text-base font-bold tracking-wide hover:bg-white/20 transition-all scroll-to-gastronomy">
+                            VER EL MENÚ
+                        </button>
+                    </div>
+                </div>
+                <!-- Scroll Indicator -->
+                <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+                    <span class="material-symbols-outlined text-white opacity-50 text-3xl">keyboard_arrow_down</span>
+                </div>
+            </div>
+
+            <!-- Menu Highlights Section -->
+            <div class="py-24 max-w-7xl mx-auto px-6">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+                    <div>
+                        <h3 class="text-primary font-bold tracking-widest uppercase text-xs mb-2 italic">Selección del
+                            Chef</h3>
+                        <h2 class="text-3xl md:text-4xl font-black tracking-tight">Nuestra Carta</h2>
+                    </div>
+                    <a class="text-primary font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all scroll-to-gastronomy"
+                        href="#">
+                        VER CARTA COMPLETA <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </a>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Menu Item 1 -->
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[4/5] overflow-hidden rounded-xl mb-4">
+                            <div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700"
+                                data-alt="Elegant cocktail drink with ice and garnish"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAlUO2zRj7RjKF_Iwe6nsqTmoJE9D9mB_w2C9Io-s1vMghvJu20QbF08Adqws8090gDp29xprtQDGn0yal1CJ_XlfQycYcAa1y1lXCvG-0d_wfj7VkHx3PnKi0mHwxLLj4Hr3iNgsTw0NqfrzXzRtVbK4TzxoJcBoChcQZ4CXXSf4mgrenxaSv-2POWucFFSq9fz4cOfMYb8e2dJ0Eo6Thx4Dx8wampQsDlbqHvcUlQ9F9k0SJ81LSim2TzKGBFfE5TtoQKOfeyGI4U')">
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
+                            </div>
+                            <div class="absolute bottom-6 left-6">
+                                <span class="text-primary text-xs font-bold uppercase tracking-widest">Novedad</span>
+                                <h4 class="text-white text-xl font-bold">Mixología de Autor</h4>
+                            </div>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">Combinaciones exóticas diseñadas por nuestros
+                            barman expertos para deleitar tus sentidos.</p>
+                    </div>
+                    <!-- Menu Item 2 -->
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[4/5] overflow-hidden rounded-xl mb-4">
+                            <div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700"
+                                data-alt="High-end gourmet food plating"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBFe8uZxyusGL3yCBgpy7Wa54QNGoZc4ES4r4-3SLif6dYXFZtJ-GNGBJEeyp_pGQEsWQojC7-rdpmDGyLazrP-3P9sY1qmw7ERI_jjOBLPtyxj1-YQHVFfrJpn6GtCRWUvmV006S1xf3n_imCd2_-sXuVKEMYskRKwf-SXd11Dv1ra48wA58qArllyYgwHvsATvxG72iSs8baOeqxW-mEmzyEWDbQrekDdGLjKhGHEiWn34fvEsLBZb7aO-ye_gl-T2TWhoEXMm1A0')">
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
+                            </div>
+                            <div class="absolute bottom-6 left-6">
+                                <span class="text-primary text-xs font-bold uppercase tracking-widest">Gourmet</span>
+                                <h4 class="text-white text-xl font-bold">Cenas de Autor</h4>
+                            </div>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">Platillos fusión que mezclan ingredientes
+                            locales con técnicas internacionales de vanguardia.</p>
+                    </div>
+                    <!-- Menu Item 3 -->
+                    <div class="group cursor-pointer">
+                        <div class="relative aspect-[4/5] overflow-hidden rounded-xl mb-4">
+                            <div class="absolute inset-0 bg-cover bg-center group-hover:scale-110 transition-transform duration-700"
+                                data-alt="Selection of premium wine bottles"
+                                style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBmoIkv72yt1JlWbXWwUOTFuIe1IRT3C34o-Wqy5PF47S7w1WE_YcRK3olU5ZmIMswzNzyiF9NyznGbKVLStQsPLKB4i_vRo1CG6U3idp86k17cC6M6jwshr4LVCNu5XSKS4Q_koCEFTeOHepP85oxKEv-aRPCXKptvTlgNDHzGdeYiuYAQysvMLiNSR0iuPa-q0wFgHmp-7jHsdAuFic90bDoHyysP7MbXE8tDL2X7VFsJ1BLJjkhbrZHFK7uQ0aHsNxZrs_9oMr_V')">
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent">
+                            </div>
+                            <div class="absolute bottom-6 left-6">
+                                <span class="text-primary text-xs font-bold uppercase tracking-widest">Exclusive</span>
+                                <h4 class="text-white text-xl font-bold">Cava Privada</h4>
+                            </div>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">Una selección meticulosa de las mejores
+                            etiquetas del mundo para paladares exigentes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section id="services" class="section bg-surface-dark py-24">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h3 class="text-primary font-bold tracking-widest uppercase text-xs mb-2">Descubre Pilamo</h3>
+                    <h2 class="text-3xl md:text-5xl font-black tracking-tight text-white mb-6">Servicios Exclusivos</h2>
+                    <div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Card 1: Restaurant -->
+                    <div
+                        class="bg-background-dark border border-white/5 rounded-2xl p-8 hover:border-primary/50 transition-all group">
+                        <div
+                            class="size-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-black transition-colors">
+                            <span class="material-symbols-outlined text-3xl">restaurant</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Restaurante</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Gastronomía de autor con los más altos
+                            estándares de calidad y sabor.</p>
+                        <a class="inline-flex items-center gap-2 text-xs font-bold text-primary tracking-widest hover:translate-x-2 transition-transform uppercase scroll-to-gastronomy"
+                            href="#">
+                            Explorar <span class="material-symbols-outlined text-sm">east</span>
+                        </a>
+                    </div>
+                    <!-- Card 2: Bar & Mixology -->
+                    <div
+                        class="bg-background-dark border border-white/5 rounded-2xl p-8 hover:border-primary/50 transition-all group">
+                        <div
+                            class="size-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-black transition-colors">
+                            <span class="material-symbols-outlined text-3xl">wine_bar</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Nightlife Bar</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Ambiente vibrante, mixología premium y la
+                            mejor música de la ciudad.</p>
+                        <a class="inline-flex items-center gap-2 text-xs font-bold text-primary tracking-widest hover:translate-x-2 transition-transform uppercase scroll-to-gastronomy"
+                            href="#">
+                            Explorar <span class="material-symbols-outlined text-sm">east</span>
+                        </a>
+                    </div>
+                    <!-- Card 3: Events -->
+                    <div
+                        class="bg-background-dark border border-white/5 rounded-2xl p-8 hover:border-primary/50 transition-all group">
+                        <div
+                            class="size-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-black transition-colors">
+                            <span class="material-symbols-outlined text-3xl">celebration</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Eventos</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Organizamos tus momentos especiales con
+                            la máxima sofisticación y detalle.</p>
+                        <a class="inline-flex items-center gap-2 text-xs font-bold text-primary tracking-widest hover:translate-x-2 transition-transform uppercase scroll-to-events"
+                            href="#">
+                            Explorar <span class="material-symbols-outlined text-sm">east</span>
+                        </a>
+                    </div>
+                    <!-- Card 4: Rooms -->
+                    <div
+                        class="bg-background-dark border border-white/5 rounded-2xl p-8 hover:border-primary/50 transition-all group">
+                        <div
+                            class="size-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-black transition-colors">
+                            <span class="material-symbols-outlined text-3xl">bed</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-white mb-3">Suites & Motel</h4>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Habitaciones de lujo diseñadas para el
+                            máximo confort y privacidad absoluta.</p>
+                        <a class="inline-flex items-center gap-2 text-xs font-bold text-primary tracking-widest hover:translate-x-2 transition-transform uppercase scroll-to-suites"
+                            href="#">
+                            Explorar <span class="material-symbols-outlined text-sm">east</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gastronomy Menu Section -->
+        <section id="gastronomy" class="section py-24 bg-background-light dark:bg-background-dark">
+            <div class="mx-auto max-w-7xl px-6 lg:px-20">
+                <!-- Hero Section -->
+                <div class="relative h-[60vh] min-h-[400px] w-full overflow-hidden mb-16 rounded-2xl">
+                    <div class="absolute inset-0 bg-cover bg-center"
+                        data-alt="Dark moody restaurant interior with warm lighting"
+                        style="background-image: linear-gradient(to bottom, rgba(10,12,10,0.4), rgba(10,12,10,1)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuCQgfTHdVgujG50ntRJz2bT5A2TurjkZ-yWmxyH7x7s5_95bpXx_rakfQjslFfPJfT1kQ6tq-6PGFEdl4X51gqynsVb4ZriawSF_FPPD2k813SvXcc-WNc-3pcms6_wv5aZG7ac0X3o-CVamoGSj1lHUI8o09jsDI7Y5nrFm8809BRFYwh8ljbwT5bbJ8pFZRY1383kt4yb-Tp6UMZjZVpHS6y57NzR6_jp_5vj3ZO5UPJubMX08KXv_0WtlfWzMy_KS4_oaH5HaGsF')">
+                    </div>
+                    <div class="relative flex h-full flex-col items-center justify-center px-6 text-center">
+                        <span class="mb-4 text-xs font-bold uppercase tracking-[0.4em] text-primary">Est. 2024</span>
+                        <h1 class="font-serif text-5xl md:text-7xl font-bold italic tracking-tight text-white mb-6">Arte
+                            Culinario</h1>
+                        <p class="max-w-2xl text-lg text-slate-300">Experimenta una sinfonía de sabores curados para los
+                            paladares más exigentes. De nuestra huerta artesanal a su mesa.</p>
+                    </div>
+                </div>
+
+                <!-- Menu Controls -->
+                <div
+                    class="sticky top-[73px] z-40 border-y border-white/5 bg-background-light dark:bg-background-dark/95 backdrop-blur-sm mb-12">
+                    <div
+                        class="mx-auto flex max-w-7xl items-center justify-center gap-4 px-6 py-4 md:gap-12 overflow-x-auto no-scrollbar">
+                        <button
+                            class="flex items-center gap-2 text-primary font-bold whitespace-nowrap border-b-2 border-primary pb-1 menu-category"
+                            data-category="all">
+                            Todos
+                        </button>
+                        <button
+                            class="flex items-center gap-2 text-slate-500 hover:text-white transition-colors whitespace-nowrap menu-category"
+                            data-category="appetizers">
+                            Entradas
+                        </button>
+                        <button
+                            class="flex items-center gap-2 text-slate-500 hover:text-white transition-colors whitespace-nowrap menu-category"
+                            data-category="main">
+                            Platos Fuertes
+                        </button>
+                        <button
+                            class="flex items-center gap-2 text-slate-500 hover:text-white transition-colors whitespace-nowrap menu-category"
+                            data-category="cocktails">
+                            Cócteles de Autor
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Menu Content -->
+                <div class="menu-content">
+                    <!-- Appetizers Section -->
+                    <div class="menu-section mb-20" id="appetizers">
+                        <div class="flex items-end justify-between mb-10 border-b border-primary/20 pb-4">
+                            <h2 class="font-serif text-4xl font-bold">Entradas</h2>
+                            <span class="text-slate-500 font-medium">Platos pequeños y entradas</span>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                            <!-- Menu Item 1 -->
+                            <div class="group flex flex-col gap-5">
+                                <div class="overflow-hidden rounded-xl bg-surface-dark aspect-[4/3]">
+                                    <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100"
+                                        data-alt="Close up of wagyu carpaccio with truffle"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvW27wGS6Z9VuF-ZDf-XlElRomLGByYbQM8GncPQeIayigEsaSbuvgcL78xovAz6gNb8cdg21ZlMrcULnmEc8eaRPNPIzumgwxtaz2N7QhKDyJRlt9JoWwxeuNVa8HhYQQ2wD7jZ58JnHTFWLJ9oUaov2DjEmwOxQYEKN_HkZA46rXnSkLMpdew_Ry1sh6_YqQnSgnELW--lWC5fQHmkUDsKiOmE-hOUz41LWX4a4amLqJEtqj5b5Bz0IkW1OVi9Vy4w6RfbcmQucj" />
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <div class="flex justify-between items-baseline">
+                                        <h3
+                                            class="font-serif text-2xl font-bold group-hover:text-primary transition-colors">
+                                            Carpaccio de Wagyu</h3>
+                                        <span class="font-display font-bold text-primary">$28</span>
+                                    </div>
+                                    <p class="text-sm text-slate-400 leading-relaxed italic">Finas láminas de carne
+                                        Wagyu A5, perlas de trufa negra, parmesano envejecido y micro-rúcula con un
+                                        toque de aceite de oliva de oro.</p>
+                                </div>
+                            </div>
+                            <!-- Menu Item 2 -->
+                            <div class="group flex flex-col gap-5">
+                                <div class="overflow-hidden rounded-xl bg-surface-dark aspect-[4/3]">
+                                    <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100"
+                                        data-alt="Charred octopus with colorful foam and herbs"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvf7GNah5YWNPugK9O-rLBhU6TEwqMx-6tV91cPEWLruKbPCGkiUB_tNXHzWWy4jh2kkUusMFDdkn-mOQBrCle7rPk5ItkDqNDfpnCfHGaq-V2El-V1JA2_A9RmtBcFu4QSr4J3l4tPKh1a-EFgap9todnS7PaMye-Z_qYzwai8djE4F72Z1cCITgxU2bBwwauoUqyBYn-gDq9mDRyYBG_J7slKbXHtZipbW6V9v80ThtVsSCMjTWjZ8Al_OESeoWxEOVgv2uWv1nX" />
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <div class="flex justify-between items-baseline">
+                                        <h3
+                                            class="font-serif text-2xl font-bold group-hover:text-primary transition-colors">
+                                            Pulpo Braseado</h3>
+                                        <span class="font-display font-bold text-primary">$24</span>
+                                    </div>
+                                    <p class="text-sm text-slate-400 leading-relaxed italic">Tierno pulpo mediterráneo,
+                                        reducción de pimentón ahumado, espuma de patata y aceite infundido con hierbas.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Menu Item 3 -->
+                            <div class="group flex flex-col gap-5">
+                                <div class="overflow-hidden rounded-xl bg-surface-dark aspect-[4/3]">
+                                    <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100"
+                                        data-alt="Creamy burrata with vibrant tomatoes"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-jDYnDaIHol185wBcsdFbvoPpW7s-Rl_z9h-goy7ebdIhA4yTY0vhTaf8IXNfsseGtH4cEJ-pxwmDeR39mQHxv_mBYj_n6Fu7gKdBj_aH_asvlA3i7WEdT3kcQSMqR4hwbsoO6dvWCwjdfEnMLU_kAtjraCCZTSrh9__VudxhNjIB3pMZTCgXjteoejtsj8Oh-m80WE3IBwcoLPFXSaGtJbnLhb3N9iVbe0LraBJgPNb1KAl4JBZzcNHcYBprDT1OAzgvbuXRh7da" />
+                                </div>
+                                <div class="flex flex-col gap-2">
+                                    <div class="flex justify-between items-baseline">
+                                        <h3
+                                            class="font-serif text-2xl font-bold group-hover:text-primary transition-colors">
+                                            Burrata con Oro</h3>
+                                        <span class="font-display font-bold text-primary">$26</span>
+                                    </div>
+                                    <p class="text-sm text-slate-400 leading-relaxed italic">Corazón de burrata cremosa,
+                                        texturas de tomate reliquia, perlas de glaseado balsámico y láminas de oro de
+                                        24k.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Courses Section -->
+                    <div class="menu-section mb-20" id="main-courses">
+                        <div class="flex items-end justify-between mb-10 border-b border-primary/20 pb-4">
+                            <h2 class="font-serif text-4xl font-bold">Platos Fuertes</h2>
+                            <span class="text-slate-500 font-medium">Especialidades de la Casa</span>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                            <!-- Main 1 -->
+                            <div
+                                class="group flex bg-slate-100 dark:bg-surface-dark/40 rounded-2xl overflow-hidden border border-white/5 p-4 gap-6 items-center">
+                                <div class="w-1/3 aspect-square rounded-xl overflow-hidden shrink-0">
+                                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                                        data-alt="Luxury steak dish with garnishes"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuc54ovEeGBgHtD0OeyjxD1UNf9WvY0w2cQbUAoNoyglqYvZQcuI2NX6_0WCwonTWFXuqn-qaJbbB8Ae4VHjQsT63hNP4Htv-gSJCR7s3arCo4aY_suZDPFf1fTXzEQoXH7tQ2jfAsPWU4NQTP5-CppCqz1qmz4LNoRUR1fDvLaIw2xlfn7eM2VOrFN3xPyU0iXlqxcg0pN-qs-OwAGvHEOw_CpdUu-zYH6v7fzx5YudQle6X8QDaT48cCrlR7v9Id1JRzmPryFkaM" />
+                                </div>
+                                <div class="flex flex-col gap-3">
+                                    <div class="flex justify-between items-center">
+                                        <h3 class="font-serif text-2xl font-bold">Secreto Ibérico</h3>
+                                        <span
+                                            class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm font-bold">$52</span>
+                                    </div>
+                                    <p class="text-sm text-slate-400 leading-relaxed">Cerdo ibérico altamente veteado, a
+                                        la parrilla de carbón, servido con puré de apio nabo y jus de cereza fermentada.
+                                    </p>
+                                    <div class="flex gap-2">
+                                        <span
+                                            class="text-[10px] uppercase tracking-widest bg-white/5 border border-white/10 px-2 py-0.5 rounded">Gluten
+                                            Free</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Main 2 -->
+                            <div
+                                class="group flex bg-slate-100 dark:bg-surface-dark/40 rounded-2xl overflow-hidden border border-white/5 p-4 gap-6 items-center">
+                                <div class="w-1/3 aspect-square rounded-xl overflow-hidden shrink-0">
+                                    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                                        data-alt="Elegant salmon dish with greenery"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIC7ronahwNvXQ_T81gQ61GjeCHrr9IC9DnA7sNHqTO0TjRsdT1hr-Q85ho8I_Yq9NG_Y4YM4eaUngcw_md0n1v76dLdA7S3Qwr1jktbK9kTZER5xU2l63W_RA_1EAJEUftiwOqFwIRQqljk-FSAhI_7Nv_O31M0Neo9fX5e5SOyQ8cOCLBlrmAQAsKgSeMmu6mThg8Jgv6F3Os145JctN4yotEcSoYS58d3qIzI5LIaGZ64BFnmbyFc7sDDE7PcQ-KSR8m8wWuK5x" />
+                                </div>
+                                <div class="flex flex-col gap-3">
+                                    <div class="flex justify-between items-center">
+                                        <h3 class="font-serif text-2xl font-bold">Bacalao Glaseado al Miso</h3>
+                                        <span
+                                            class="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm font-bold">$48</span>
+                                    </div>
+                                    <p class="text-sm text-slate-400 leading-relaxed">Bacalao negro marinado durante 24
+                                        horas en miso saikyo, servido con bok choy braseado y espuma de jengibre y
+                                        dashi.</p>
+                                    <div class="flex gap-2">
+                                        <span
+                                            class="text-[10px] uppercase tracking-widest bg-white/5 border border-white/10 px-2 py-0.5 rounded">Chef's
+                                            Choice</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cocktails Section -->
+                    <div class="menu-section" id="cocktails">
+                        <div class="flex items-end justify-between mb-10 border-b border-primary/20 pb-4">
+                            <h2 class="font-serif text-4xl font-bold">Mixología</h2>
+                            <span class="text-slate-500 font-medium">Oro Líquido y Maravillas Botánicas</span>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                            <!-- Cocktail 1 -->
+                            <div class="relative group h-96 rounded-2xl overflow-hidden border border-white/10">
+                                <img class="absolute inset-0 h-full w-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                    data-alt="Vibrant green cocktail in a luxury glass"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAW6lktPuXxRkc4jKFuoi98gys7z7i6Lp7ss6-WgVVHUtedF8FyfBz0L-_-wEjvBOGoz1Em6NSd79dQd_iSV9Xpi7WHqiv6QKASi8Nnr9naarfKi2db98wyqB27jIb3OD4-qz2fh-7hvIgr-GVW1n0pcIfjALhWSxZp4lhbSPkgHlG2h5RSQGYykpioT5Je-VtBEneWnvFovHwA7E6HLGJuhevnHcU_O7ZusLVkZB9guzCDsQDcTCCj9Q6rYjThcZu-0Q7NquKhnKh" />
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/20 to-transparent">
+                                </div>
+                                <div class="absolute bottom-0 p-6 flex flex-col gap-1">
+                                    <span
+                                        class="text-[10px] text-primary font-bold tracking-[0.3em] uppercase">Botánico</span>
+                                    <h4 class="font-serif text-xl font-bold">Bosque de Neón</h4>
+                                    <p class="text-xs text-slate-300">Ginebra, Chartreuse, lima y esencia de albahaca
+                                        hecha en casa.</p>
+                                    <span class="mt-2 text-primary font-bold">$18</span>
+                                </div>
+                            </div>
+                            <!-- Cocktail 2 -->
+                            <div class="relative group h-96 rounded-2xl overflow-hidden border border-white/10">
+                                <img class="absolute inset-0 h-full w-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                    data-alt="Smoky amber cocktail with ice"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwBVUefjvXIi9-MBhZpscIPKXao7bLoFry0supopp7vpT5-BKBZbLLeV7uFiqRLXbHTurz2A268boX1ZbWc1kzeuNEK6kz5pdwW6mfFjoWlhRk2Az4BoWsBdu4BuMk-4AXs_ot85c6MyTFzsGP2b89W_s4LZqzk-kuIPOChnVcLX5LlSeVIX0PtRaK80zegc0e5mXZVSP0Pe7aWN0AHZNRosYVugXEq7UJOmClGvBAME6_2Zq-V5fzQhqzRMQLGf2h9RIHS_WLKyyW" />
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/20 to-transparent">
+                                </div>
+                                <div class="absolute bottom-0 p-6 flex flex-col gap-1">
+                                    <span
+                                        class="text-[10px] text-primary font-bold tracking-[0.3em] uppercase">Ahumado</span>
+                                    <h4 class="font-serif text-xl font-bold">Noche de Terciopelo</h4>
+                                    <p class="text-xs text-slate-300">Bourbon, amaro, romero ahumado y amargos de
+                                        chocolate.</p>
+                                    <span class="mt-2 text-primary font-bold">$20</span>
+                                </div>
+                            </div>
+                            <!-- Cocktail 3 -->
+                            <div class="relative group h-96 rounded-2xl overflow-hidden border border-white/10">
+                                <img class="absolute inset-0 h-full w-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                    data-alt="Elegant champagne flute with bubbles"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-JFYUaQkuRN_IeRArGpR4DkaHnSohZB58ZDueAun6VoZRzZ0mViqwQhXPZ0pvY64a-O-pMp_gf1ENA06IB-QD0R2dl4hE3osEEwkelBV2YGNSyNSpDrcfkxOz36ufHX0D6YqPN-n4q12t5D300dgnguBym1DbVJtn7stKvSUGQAPvmZ7ipov4A9-DUmZTHt1yjbP1fV0t2Of-PpAqd52jphsDLoz5NZWIk0uNyVLEm30hpICvozwqK9c8qL7zv-P1eWy1yL4NRPPg" />
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/20 to-transparent">
+                                </div>
+                                <div class="absolute bottom-0 p-6 flex flex-col gap-1">
+                                    <span
+                                        class="text-[10px] text-primary font-bold tracking-[0.3em] uppercase">Burbujeante</span>
+                                    <h4 class="font-serif text-xl font-bold">Pilamo Fizz</h4>
+                                    <p class="text-xs text-slate-300">Champagne, flor de saúco y escamas de oro.</p>
+                                    <span class="mt-2 text-primary font-bold">$22</span>
+                                </div>
+                            </div>
+                            <!-- Cocktail 4 -->
+                            <div class="relative group h-96 rounded-2xl overflow-hidden border border-white/10">
+                                <img class="absolute inset-0 h-full w-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                    data-alt="Exotic fruit based cocktail"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1t8IADd5zGM1pAaMLDD01qOr49kDTRhgdcAtPG4Cb-vpWAhPRqjSwhtifZl_26CoM1mo9ErZ8B_i-H56W8Bp2MHh98ymSYlBfWGHAfDWtfRFtqscyqrqGXSYd8ntU21ZAkBu0kjKVbegEr0aAZshQGa5gPjOSJwwQrvodOQWQ8AWFtKrQEurIAuHKv-vPGyw6P-dbMLo7gAi92GzR6JpTOzb83yvgoZtYEL7NsCryfIG49HsVJS7X41GmAsLlHjTFDnyKiJXeau9v" />
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/20 to-transparent">
+                                </div>
+                                <div class="absolute bottom-0 p-6 flex flex-col gap-1">
+                                    <span
+                                        class="text-[10px] text-primary font-bold tracking-[0.3em] uppercase">Exótico</span>
+                                    <h4 class="font-serif text-xl font-bold">Sol de Medianoche</h4>
+                                    <p class="text-xs text-slate-300">Mezcal, fruta del dragón, agave y borde de chile.
+                                    </p>
+                                    <span class="mt-2 text-primary font-bold">$19</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Luxury Motel Suites Section -->
+        <div id="suites" class="max-w-7xl mx-auto px-6 lg:px-10">
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+                <div>
+                    <span class="text-primary font-bold uppercase tracking-widest text-xs mb-3 block">Hospédate con
+                        nosotros</span>
+                    <h2 class="text-4xl md:text-5xl font-black text-white tracking-tight">Suites de Motel de Lujo
+                    </h2>
+                    <div class="h-1.5 w-24 bg-primary mt-6 rounded-full"></div>
+                </div>
+                <p class="text-slate-400 max-w-md md:text-right leading-relaxed">
+                    Después de la celebración, retírate a nuestras exclusivas suites diseñadas para una privacidad
+                    absoluta y un confort sofisticado.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Standard Room -->
+                <div
+                    class="group flex flex-col bg-[#121d13] border border-white/5 rounded-2xl overflow-hidden transition-all hover:border-primary/30">
+                    <div class="relative h-72 overflow-hidden">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            data-alt="Modern hotel room with minimalist design and warm lighting"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoaO5rNK-cLb9kFveJY2pNUr1K5yXnBNO_6D278LTXKLqUbaLAkzbPP8gMzKSnTQho0qQbze7dL3_Y2YgtyI4vwuS2hcVsbgDzn3EMQ2HJJNFx9L9ttEBRfINoAwX1giHtGmFX5v7Lx20uT9xWet5eY-B5cKQk195iOUTWouKyokSHKip68WlidPjQxIKHc4UX4oLjDxCaX8Ck1wk-G_ZFo0U3TLtdi-r5ubCoHOpSwThhInZJbri-XTGDWnLQaqBfrTsuOgum5n1f" />
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="bg-background-dark/80 backdrop-blur-md text-white text-[10px] font-bold uppercase tracking-tighter px-3 py-1 rounded-full border border-white/10">Essentials</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-1">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-white">Habitación Estándar</h3>
+                            <div class="text-primary font-bold">
+                                <span class="text-xs text-slate-400 font-normal">Desde</span> $80<span
+                                    class="text-xs">/nt</span>
+                            </div>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Essential luxury for a perfect rest. King-size bed, premium linens, and automated
+                            climate control for your comfort.
+                        </p>
+                        <div class="flex gap-4 mt-auto pt-6 border-t border-white/5">
+                            <button
+                                class="flex-1 bg-primary text-background-dark font-bold py-3 rounded-lg hover:brightness-110 transition-all text-sm uppercase tracking-wider whatsapp-btn"
+                                data-room="Habitación Estándar">
+                                Reservar por WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Executive Suite -->
+                <div
+                    class="group flex flex-col bg-[#121d13] border border-white/5 rounded-2xl overflow-hidden transition-all hover:border-primary/30">
+                    <div class="relative h-72 overflow-hidden">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            data-alt="Luxury suite with private living area and designer furniture"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuATHWZkH5GDaUj2hZR030wAyswhwvNdJtzpkCCWJpcHZousr08B9bCw537231LHgjzWNrbNvN-YLhUImk40Xzvs4pqKTpJBFeHKQ-TK08IJW1H-k0ftV_giUX0LjMiOkPjdEL7Yd_JUftLCHjeBcR7bo5MBp4ezC4V4ecp5BzCuFbAc8MCZI3aljwucMvqPBoOVtOKiVt9Wgl6b2fG60kHEcx2T5B33q5J53VAItN7Z_2Dua6i8p1VxNkRpClBc6swdycUSHA3Zb1b-" />
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="bg-primary/90 backdrop-blur-md text-background-dark text-[10px] font-black uppercase tracking-tighter px-3 py-1 rounded-full">Popular</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-1">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-white">Suite Ejecutiva</h3>
+                            <div class="text-primary font-bold">
+                                <span class="text-xs text-slate-400 font-normal">Desde</span> $120<span
+                                    class="text-xs">/nt</span>
+                            </div>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            Enhanced comfort with private lounge areas, smart workspace, and complimentary premium
+                            mini-bar selection.
+                        </p>
+                        <div class="flex gap-4 mt-auto pt-6 border-t border-white/5">
+                            <button
+                                class="flex-1 bg-primary text-background-dark font-bold py-3 rounded-lg hover:brightness-110 transition-all text-sm uppercase tracking-wider whatsapp-btn"
+                                data-room="Suite Ejecutiva">
+                                Reservar por WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- VIP Experience -->
+                <div
+                    class="group flex flex-col bg-[#121d13] border border-white/5 rounded-2xl overflow-hidden transition-all hover:border-primary/30 shadow-2xl">
+                    <div class="relative h-72 overflow-hidden">
+                        <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                            data-alt="Ultra-luxury VIP room with jacuzzi and panoramic views"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgseWVCFONTR5V-lIRrNYHiE49_pmETPw6F_8AbakbazypPGZdB8ldjevUwCw3tHPosBYys9h6GQ25GJG51AIbVs02Z3hvvN1IVAUzoglZH7hXIicwCO-qLJIRTTRxEQT5KXHkarOM8E6hFxX6xsTn11CXfFqcGPQKJX776R3c3RAPDcxnACGqOwK7C3Xl6YY7s8YPF79BsQZ9FEeA4TbSyAiyc0x2vxPRJjLgUbL5YMh9eQKHUGlNJi_-Ihq3pmR_IhXzrTRUbi1_" />
+                        <div class="absolute top-4 left-4">
+                            <span
+                                class="bg-white/90 backdrop-blur-md text-background-dark text-[10px] font-black uppercase tracking-tighter px-3 py-1 rounded-full">Signature</span>
+                        </div>
+                    </div>
+                    <div class="p-8 flex flex-col flex-1">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-2xl font-bold text-white">Experiencia VIP</h3>
+                            <div class="text-primary font-bold">
+                                <span class="text-xs text-slate-400 font-normal">Desde</span> $250<span
+                                    class="text-xs">/nt</span>
+                            </div>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                            The ultimate experience: In-room Jacuzzi, private bar, panoramic views, and exclusive
+                            24/7 concierge service.
+                        </p>
+                        <div class="flex gap-4 mt-auto pt-6 border-t border-white/5">
+                            <button
+                                class="flex-1 bg-primary text-background-dark font-bold py-3 rounded-lg hover:brightness-110 transition-all text-sm uppercase tracking-wider whatsapp-btn"
+                                data-room="Experiencia VIP">
+                                Reservar por WhatsApp
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="mt-20 flex flex-col md:flex-row items-center justify-center gap-6 p-10 bg-white/5 rounded-3xl border border-white/10">
+                <div class="text-center md:text-left">
+                    <h4 class="text-xl font-bold text-white mb-2">Want to see more?</h4>
+                    <p class="text-slate-400 text-sm">Explore our full gallery of amenities and private services.
+                    </p>
+                </div>
+                <div class="h-px w-full md:w-24 md:h-px bg-white/10"></div>
+                <button
+                    class="bg-white/10 text-white px-10 py-4 rounded-xl font-bold hover:bg-white/20 transition-all border border-white/10">
+                    View Full Gallery
+                </button>
+            </div>
+        </div>
+        </section>
+
+        <!-- Booking & Contact Section -->
+        <section id="booking" class="section py-24 bg-background-light dark:bg-[#112114]">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    <!-- Booking Form Section -->
+                    <div class="lg:col-span-7 flex flex-col gap-8">
+                        <div>
+                            <h2 class="text-4xl font-black leading-tight mb-2 uppercase italic tracking-tighter">
+                                Reservas Premium</h2>
+                            <p class="text-slate-500 dark:text-slate-400 max-w-lg">Asegura tu mesa o habitación privada
+                                en Pilamo. Vive la máxima expresión de la vida nocturna y la excelencia culinaria.</p>
+                        </div>
+                        <!-- Progress Bar -->
+                        <div class="space-y-3">
+                            <div class="flex justify-between items-end">
+                                <span class="text-sm font-bold uppercase tracking-widest text-primary">Progreso</span>
+                                <span class="text-xs font-mono opacity-60" id="progress-text">Paso 1 de 2: Información</span>
+                            </div>
+                            <div class="h-1.5 w-full bg-slate-200 dark:bg-white/10 rounded-full overflow-hidden">
+                                <div id="progress-bar" class="h-full bg-primary w-1/2 shadow-[0_0_10px_#17cf36] transition-all duration-300"></div>
+                            </div>
+                        </div>
+                        <!-- Booking Card -->
+                        <div
+                            class="bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl p-8 shadow-xl">
+                            <form class="space-y-6" id="booking-form">
+                                <!-- STEP 1: Personal Information -->
+                                <div id="step-1" class="space-y-6">
+                                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-4">Información de la Reserva</h3>
+                                    <!-- Personal Info -->
+                                    <div class="space-y-2">
+                                        <label class="text-xs font-bold uppercase tracking-widest text-slate-400">Nombre
+                                            Completo</label>
+                                        <div class="relative">
+                                            <span
+                                                class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-sm">person</span>
+                                            <input
+                                                class="w-full pl-12 pr-4 py-3 bg-slate-100 dark:bg-white/5 border border-transparent focus:border-primary focus:ring-1 focus:ring-primary rounded-lg transition-all text-sm outline-none"
+                                                name="name" placeholder="Ej. Juan Pérez" required type="text" />
+                                        </div>
+                                    </div>
+
+                                    <!-- Logistics -->
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <div class="space-y-2">
+                                            <label
+                                                class="text-xs font-bold uppercase tracking-widest text-slate-400">Fecha</label>
+                                            <div class="relative">
+                                                <span
+                                                    class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-sm">calendar_today</span>
+                                                <input
+                                                    class="w-full pl-12 pr-4 py-3 bg-slate-100 dark:bg-white/5 border border-transparent focus:border-primary focus:ring-1 focus:ring-primary rounded-lg transition-all text-sm outline-none"
+                                                    name="date" required type="date" />
+                                            </div>
+                                        </div>
+                                        <div class="space-y-2">
+                                            <label
+                                                class="text-xs font-bold uppercase tracking-widest text-slate-400">Horario</label>
+                                            <div class="relative">
+                                                <span
+                                                    class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-sm">schedule</span>
+                                                <input
+                                                    class="w-full pl-12 pr-4 py-3 bg-slate-100 dark:bg-white/5 border border-transparent focus:border-primary focus:ring-1 focus:ring-primary rounded-lg transition-all text-sm outline-none"
+                                                    name="time" required type="time" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Guests & Event Type -->
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <div class="space-y-2">
+                                            <label
+                                                class="text-xs font-bold uppercase tracking-widest text-slate-400">Invitados</label>
+                                            <div class="relative">
+                                                <span
+                                                    class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-sm">group</span>
+                                                <select
+                                                    class="w-full pl-12 pr-4 py-3 bg-slate-100 dark:bg-slate-900 text-slate-900 dark:text-white border border-transparent focus:border-primary focus:ring-1 focus:ring-primary rounded-lg transition-all text-sm outline-none appearance-none"
+                                                    name="guests" required>
+                                                    <option value="">Seleccionar...</option>
+                                                    <option>2 Personas</option>
+                                                    <option>4 Personas</option>
+                                                    <option>6 Personas</option>
+                                                    <option>10+ Personas</option>
+                                                    <option>Evento Corporativo</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="space-y-2">
+                                            <label class="text-xs font-bold uppercase tracking-widest text-slate-400">Asunto
+                                                del Evento</label>
+                                            <div class="relative">
+                                                <span
+                                                    class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 text-sm">event</span>
+                                                <input
+                                                    class="w-full pl-12 pr-4 py-3 bg-slate-100 dark:bg-white/5 border border-transparent focus:border-primary focus:ring-1 focus:ring-primary rounded-lg transition-all text-sm outline-none"
+                                                    name="event_type" placeholder="Ej. Cumpleaños, Cena de Negocios"
+                                                    required type="text" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Button for Step 1 -->
+                                    <button type="button" id="next-btn"
+                                        class="w-full py-4 bg-primary text-background-dark font-black uppercase tracking-tighter text-lg rounded-lg hover:shadow-[0_10px_30px_rgba(23,207,54,0.3)] transform hover:-translate-y-1 transition-all">
+                                        Siguiente - Seleccionar Menú
+                                    </button>
+                                </div>
+
+                                <!-- STEP 2: Menu Selection -->
+                                <div id="step-2" class="space-y-6 hidden">
+                                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-4">Selecciona tu Menú</h3>
+                                    <div class="space-y-4">
+                                        <label class="text-xs font-bold uppercase tracking-widest text-slate-400">Selección
+                                            de Platos</label>
+                                        <div class="max-h-96 overflow-y-auto pr-2 custom-scrollbar space-y-2">
+                                            <!-- Entradas -->
+                                            <div class="border-b border-white/10 pb-3 mb-3">
+                                                <h4 class="text-sm font-bold text-primary mb-2">ENTRADAS</h4>
+                                                <div
+                                                    class="p-3 rounded-lg bg-slate-100 dark:bg-white/5 flex items-center justify-between group hover:bg-primary/10 transition-colors">
+                                                    <div>
+                                                        <span class="text-sm font-medium">Carpaccio de Wagyu</span>
+                                                        <p class="text-xs text-slate-400">$28</p>
+                                                    </div>
+                                                    <input
+                                                        class="rounded text-primary focus:ring-primary bg-transparent border-slate-400"
+                                                        name="dish" type="checkbox" value="Carpaccio de Wagyu ($28)" />
+                                                </div>
+                                                <div
+                                                    class="p-3 rounded-lg bg-slate-100 dark:bg-white/5 flex items-center justify-between group hover:bg-primary/10 transition-colors mt-2">
+                                                    <div>
+                                                        <span class="text-sm font-medium">Pulpo Braseado</span>
+                                                        <p class="text-xs text-slate-400">$24</p>
+                                                    </div>
+                                                    <input
+                                                        class="rounded text-primary focus:ring-primary bg-transparent border-slate-400"
+                                                        name="dish" type="checkbox" value="Pulpo Braseado ($24)" />
+                                                </div>
+                                                <div
+                                                    class="p-3 rounded-lg bg-slate-100 dark:bg-white/5 flex items-center justify-between group hover:bg-primary/10 transition-colors mt-2">
+                                                    <div>
+                                                        <span class="text-sm font-medium">Burrata con Oro</span>
+                                                        <p class="text-xs text-slate-400">$26</p>
+                                                    </div>
+                                                    <input
+                                                        class="rounded text-primary focus:ring-primary bg-transparent border-slate-400"
+                                                        name="dish" type="checkbox" value="Burrata con Oro ($26)" />
+                                                </div>
+                                            </div>
+
+                                            <!-- Platos Fuertes -->
+                                            <div class="border-b border-white/10 pb-3 mb-3">
+                                                <h4 class="text-sm font-bold text-primary mb-2">PLATOS FUERTES</h4>
+                                                <div
+                                                    class="p-3 rounded-lg bg-slate-100 dark:bg-white/5 flex items-center justify-between group hover:bg-primary/10 transition-colors">
+                                                    <div>
+                                                        <span class="text-sm font-medium">Secreto Ibérico</span>
+                                                        <p class="text-xs text-slate-400">$52</p>
+                                                    </div>
+                                                    <input
+                                                        class="rounded text-primary focus:ring-primary bg-transparent border-slate-400"
+                                                        name="dish" type="checkbox" value="Secreto Ibérico ($52)" />
+                                                </div>
+                                                <div
+                                                    class="p-3 rounded-lg bg-slate-100 dark:bg-white/5 flex items-center justify-between group hover:bg-primary/10 transition-colors mt-2">
+                                                    <div>
+                                                        <span class="text-sm font-medium">Bacalao Glaseado al Miso</span>
+                                                        <p class="text-xs text-slate-400">$48</p>
+                                                    </div>
+                                                    <input
+                                                        class="rounded text-primary focus:ring-primary bg-transparent border-slate-400"
+                                                        name="dish" type="checkbox" value="Bacalao Glaseado al Miso ($48)" />
+                                                </div>
+                                                <div
+                                                    class="p-3 rounded-lg bg-slate-100 dark:bg-white/5 flex items-center justify-between group hover:bg-primary/10 transition-colors mt-2">
+                                                    <div>
+                                                        <span class="text-sm font-medium">Costilla Wagyu Tomahawk</span>
+                                                        <p class="text-xs text-slate-400">$68</p>
+                                                    </div>
+                                                    <input
+                                                        class="rounded text-primary focus:ring-primary bg-transparent border-slate-400"
+                                                        name="dish" type="checkbox" value="Costilla Wagyu Tomahawk ($68)" />
+                                                </div>
+                                            </div>
+
+                                            <!-- Cócteles -->
+                                            <div>
+                                                <h4 class="text-sm font-bold text-primary mb-2">CÓCTELES DE AUTOR</h4>
+                                                <div
+                                                    class="p-3 rounded-lg bg-slate-100 dark:bg-white/5 flex items-center justify-between group hover:bg-primary/10 transition-colors">
+                                                    <div>
+                                                        <span class="text-sm font-medium">Midnight Garden</span>
+                                                        <p class="text-xs text-slate-400">$16</p>
+                                                    </div>
+                                                    <input
+                                                        class="rounded text-primary focus:ring-primary bg-transparent border-slate-400"
+                                                        name="dish" type="checkbox" value="Midnight Garden ($16)" />
+                                                </div>
+                                                <div
+                                                    class="p-3 rounded-lg bg-slate-100 dark:bg-white/5 flex items-center justify-between group hover:bg-primary/10 transition-colors mt-2">
+                                                    <div>
+                                                        <span class="text-sm font-medium">Smoke & Espresso</span>
+                                                        <p class="text-xs text-slate-400">$18</p>
+                                                    </div>
+                                                    <input
+                                                        class="rounded text-primary focus:ring-primary bg-transparent border-slate-400"
+                                                        name="dish" type="checkbox" value="Smoke & Espresso ($18)" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Buttons for Step 2 -->
+                                    <div class="flex gap-4">
+                                        <button type="button" id="back-btn"
+                                            class="flex-1 py-4 border-2 border-primary text-primary font-black uppercase tracking-tighter text-lg rounded-lg hover:bg-primary/10 transition-all">
+                                            Atrás
+                                        </button>
+                                        <button
+                                            class="flex-1 py-4 bg-primary text-background-dark font-black uppercase tracking-tighter text-lg rounded-lg hover:shadow-[0_10px_30px_rgba(23,207,54,0.3)] transform hover:-translate-y-1 transition-all"
+                                            type="submit">
+                                            Enviar por WhatsApp
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- Contact & Map Section -->
+                    <div class="lg:col-span-5 flex flex-col gap-6">
+                        <!-- Map Container -->
+                        <div
+                            class="rounded-xl overflow-hidden border border-slate-200 dark:border-white/10 h-72 relative group">
+                            <div
+                                class="absolute inset-0 bg-slate-900/40 z-10 pointer-events-none group-hover:bg-slate-900/10 transition-colors">
+                            </div>
+                            <div
+                                class="absolute top-4 left-4 z-20 bg-background-dark/80 backdrop-blur px-3 py-1 rounded-full border border-primary/30 flex items-center gap-2">
+                                <span class="size-2 rounded-full bg-primary animate-pulse"></span>
+                                <span class="text-[10px] font-bold uppercase tracking-widest text-white">Ubicación en
+                                    Vivo</span>
+                            </div>
+                            <div class="w-full h-full bg-slate-300 dark:bg-slate-800">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15915.241513222485!2d-74.0725227!3d4.598056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a3805988e7%3A0x6a2c918c54784411!2sPlaza%20de%20Bol%C3%ADvar!5e0!3m2!1ses!2sco!4v1690000000000!5m2!1ses!2sco"
+                                    width="100%" height="100%"
+                                    style="border:0; filter: grayscale(0.5) contrast(1.2) brightness(0.8);"
+                                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                        <!-- Info Cards -->
+                        <div class="grid grid-cols-1 gap-4">
+                            <div
+                                class="p-5 rounded-xl border border-slate-200 dark:border-white/10 bg-white/50 dark:bg-white/5 flex items-start gap-4">
+                                <div class="size-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined text-primary">phone_iphone</span>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Consultas</p>
+                                    <p class="font-bold">+1 (555) 000-8888</p>
+                                    <a class="text-xs text-primary font-bold mt-1 flex items-center gap-1 hover:underline whatsapp-btn"
+                                        href="#">
+                                        <span class="material-symbols-outlined text-sm">chat</span>
+                                        CHATEAR EN WHATSAPP
+                                    </a>
+                                </div>
+                            </div>
+                            <div
+                                class="p-5 rounded-xl border border-slate-200 dark:border-white/10 bg-white/50 dark:bg-white/5 flex items-start gap-4">
+                                <div class="size-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined text-primary">schedule</span>
+                                </div>
+                                <div class="flex-1">
+                                    <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Horarios
+                                        de Operación</p>
+                                    <div class="space-y-1 text-sm font-medium">
+                                        <div class="flex justify-between">
+                                            <span class="opacity-60">Lun - Jue</span>
+                                            <span>18:00 - 02:00</span>
+                                        </div>
+                                        <div class="flex justify-between text-primary font-bold">
+                                            <span>Vie - Sab</span>
+                                            <span>18:00 - 05:00</span>
+                                        </div>
+                                        <div class="flex justify-between">
+                                            <span class="opacity-60">Domingo</span>
+                                            <span>16:00 - 00:00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="p-5 rounded-xl border border-slate-200 dark:border-white/10 bg-white/50 dark:bg-white/5 flex items-start gap-4">
+                                <div class="size-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined text-primary">location_on</span>
+                                </div>
+                                <div>
+                                    <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Dirección</p>
+                                    <p class="font-bold">88 Calle Neón, Distrito Sky</p>
+                                    <p class="text-xs opacity-60">2do Piso, Entrada VIP Norte</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Newsletter Section -->
+            <div class="py-24 max-w-7xl mx-auto px-6">
+                <div
+                    class="bg-gradient-to-r from-primary to-[#0f8a24] rounded-3xl p-12 md:p-20 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-20 -mt-20 blur-3xl"></div>
+                    <div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h2 class="text-black text-4xl font-black mb-4">Únete a la membresía exclusiva de Pilamo
+                            </h2>
+                            <p class="text-black/80 text-lg">Recibe invitaciones a eventos privados, preventas de
+                                reservas y beneficios VIP cada mes.</p>
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-3">
+                            <input
+                                class="flex-1 h-14 rounded-xl border-none bg-white/20 placeholder:text-black/50 text-black px-6 focus:ring-2 focus:ring-black"
+                                placeholder="Tu correo electrónico" type="email" />
+                            <button
+                                class="bg-black text-white h-14 px-8 rounded-xl font-bold hover:bg-slate-900 transition-colors">SUSCRIBIRME</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-black py-20 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-3 text-white mb-6">
+                        <div class="size-8 text-primary">
+                            <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                        <h2 class="text-xl font-black uppercase tracking-wider">PILAMO</h2>
+                    </div>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-6">
+                        Elevando el concepto de vida nocturna y hospitalidad a un nivel de sofisticación sin
+                        precedentes.
+                    </p>
+                    <div class="flex gap-4">
+                        <a class="size-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-primary hover:text-black transition-all"
+                            href="#">
+                            <svg class="size-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="size-10 rounded-lg bg-white/5 flex items-center justify-center hover:bg-primary hover:text-black transition-all"
+                            href="#">
+                            <svg class="size-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold mb-6 tracking-wide">NAVEGACIÓN</h5>
+                    <ul class="space-y-4 text-slate-500 text-sm">
+                        <li><a class="hover:text-primary transition-colors scroll-to-gastronomy" href="#">Menú
+                                Gastronómico</a></li>
+                        <li><a class="hover:text-primary transition-colors scroll-to-gastronomy" href="#">Mixología</a>
+                        </li>
+                        <li><a class="hover:text-primary transition-colors scroll-to-events" href="#">Reserva de
+                                Eventos</a></li>
+                        <li><a class="hover:text-primary transition-colors scroll-to-suites" href="#">Suites VIP</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold mb-6 tracking-wide">CONTACTO</h5>
+                    <ul class="space-y-4 text-slate-500 text-sm">
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary text-lg">location_on</span>
+                            <a href="https://maps.app.goo.gl/k9jhgePAFvGRYSoR7" target="_blank" rel="noopener noreferrer" class="hover:text-primary transition-colors">Ver en Google Maps</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary text-lg">call</span>
+                            +1 234 567 890
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-primary text-lg">mail</span>
+                            reservas@pilamo.com
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-white font-bold mb-6 tracking-wide">UBICACIÓN</h5>
+                    <a href="https://maps.app.goo.gl/k9jhgePAFvGRYSoR7" target="_blank" rel="noopener noreferrer"
+                        class="block rounded-xl overflow-hidden grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-500 cursor-pointer">
+                        <img alt="Map location for Pilamo restaurant" class="w-full h-40 object-cover"
+                            data-location="Pilamo Restaurant"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDN70m1jcvViVOMKwrjdl6y4dyE8lr7Tqz98wn-K0jPthN3UOQWxFP-Av_-ud5fPMx-o7pEMAJL5LTEBGtRtowFT3YL0edSol2Gw1wpdAaGW4qKKFAFJfIHJbW1OjFahokNjKscQKvB5EoRnar6O9da6m6UiA4ZtG5lulmHtKMxpBL4amIGfiLD6_MS9HOZg8Zn1MFX7HX2ZdnY-dh6J0sqLKDHX2ziTmcNurVtwNAd6aL1HTTTf-3CkDDa2jRew63ojuCukHwuomMh" />
+                    </a>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-slate-600 text-xs">© 2024 Pilamo Restaurant-Bar. Todos los derechos reservados.</p>
+                <div class="flex gap-6 text-slate-600 text-xs">
+                    <a class="hover:text-slate-400 transition-colors" href="#">Términos y Condiciones</a>
+                    <a class="hover:text-slate-400 transition-colors" href="#">Política de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Action Button with Menu -->
+    <div id="whatsapp-floating" class="fixed bottom-8 right-8 z-50">
+        <!-- Floating Button -->
+        <button id="whatsapp-btn" class="size-14 bg-[#25d366] rounded-full flex items-center justify-center text-white shadow-2xl hover:scale-110 transition-transform relative group">
+            <svg class="size-8" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.634 1.437h.005c6.558 0 11.894-5.335 11.897-11.893a11.821 11.821 0 00-3.48-8.413z">
+                </path>
+            </svg>
+        </button>
+
+        <!-- Menu Options (Hidden by default) -->
+        <div id="whatsapp-menu" class="absolute bottom-20 right-0 bg-white dark:bg-slate-900 rounded-2xl shadow-2xl overflow-hidden opacity-0 scale-0 transition-all duration-300 origin-bottom-right min-w-max">
+            <button id="whatsapp-consult" class="w-full px-6 py-4 text-left hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-900 dark:text-white font-medium transition-colors flex items-center gap-3 border-b border-slate-200 dark:border-slate-700">
+                <span class="material-symbols-outlined text-primary">help</span>
+                Hacer una consulta
+            </button>
+            <button id="whatsapp-reserve" class="w-full px-6 py-4 text-left hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-900 dark:text-white font-medium transition-colors flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary">event</span>
+                Hacer una reserva
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Floating WhatsApp Button Menu
+        const whatsappBtn = document.getElementById('whatsapp-btn');
+        const whatsappMenu = document.getElementById('whatsapp-menu');
+        const whatsappConsult = document.getElementById('whatsapp-consult');
+        const whatsappReserve = document.getElementById('whatsapp-reserve');
+
+        // Toggle menu
+        whatsappBtn.addEventListener('click', function() {
+            whatsappMenu.classList.toggle('opacity-0');
+            whatsappMenu.classList.toggle('scale-0');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('#whatsapp-floating')) {
+                whatsappMenu.classList.add('opacity-0');
+                whatsappMenu.classList.add('scale-0');
+            }
+        });
+
+        // Consult button - generic inquiry
+        whatsappConsult.addEventListener('click', function() {
+            const message = encodeURIComponent(
+                '¡Hola Pilamo! 👋\n\n' +
+                'Me gustaría realizar una consulta sobre sus servicios, menú o disponibilidad.\n\n' +
+                '¿Podrían ayudarme con más información?'
+            );
+            const phoneNumber = '573000000000';
+            window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+            
+            // Close menu after clicking
+            whatsappMenu.classList.add('opacity-0');
+            whatsappMenu.classList.add('scale-0');
+        });
+
+        // Reserve button - scroll to booking form
+        whatsappReserve.addEventListener('click', function() {
+            document.querySelector('#booking').scrollIntoView({ behavior: 'smooth' });
+            
+            // Close menu after clicking
+            whatsappMenu.classList.add('opacity-0');
+            whatsappMenu.classList.add('scale-0');
+        });
+
+        // Menu category filtering
+        document.querySelectorAll('.menu-category').forEach(button => {
+            button.addEventListener('click', function () {
+                // Update active button
+                document.querySelectorAll('.menu-category').forEach(btn => {
+                    btn.classList.remove('text-primary', 'border-primary', 'border-b-2');
+                    btn.classList.add('text-slate-500');
+                });
+
+                this.classList.remove('text-slate-500');
+                this.classList.add('text-primary', 'border-primary', 'border-b-2');
+
+                const category = this.dataset.category;
+                const menuSections = document.querySelectorAll('.menu-section');
+
+                if (category === 'all') {
+                    menuSections.forEach(section => {
+                        section.style.display = 'block';
+                    });
+                } else {
+                    menuSections.forEach(section => {
+                        if (section.id === category || section.id.includes(category)) {
+                            section.style.display = 'block';
+                        } else {
+                            section.style.display = 'none';
+                        }
+                    });
+                }
+            });
+        });
+
+        // Booking form multi-step handling
+        let currentStep = 1;
+        
+        const updateProgressBar = (step) => {
+            const progressBar = document.getElementById('progress-bar');
+            const progressText = document.getElementById('progress-text');
+            
+            if (step === 1) {
+                progressBar.style.width = '50%';
+                progressText.textContent = 'Paso 1 de 2: Información';
+            } else if (step === 2) {
+                progressBar.style.width = '100%';
+                progressText.textContent = 'Paso 2 de 2: Menú';
+            }
+        };
+        
+        const showStep = (step) => {
+            document.getElementById('step-1').classList.toggle('hidden', step !== 1);
+            document.getElementById('step-2').classList.toggle('hidden', step !== 2);
+            updateProgressBar(step);
+        };
+        
+        // Next button - from step 1 to step 2
+        document.getElementById('next-btn').addEventListener('click', function() {
+            const form = document.getElementById('booking-form');
+            const name = form.querySelector('input[name="name"]').value;
+            const date = form.querySelector('input[name="date"]').value;
+            const time = form.querySelector('input[name="time"]').value;
+            const guests = form.querySelector('select[name="guests"]').value;
+            const eventType = form.querySelector('input[name="event_type"]').value;
+            
+            // Validate required fields
+            if (!name || !date || !time || !guests || !eventType) {
+                alert('Por favor completa todos los campos requeridos');
+                return;
+            }
+            
+            currentStep = 2;
+            showStep(2);
+        });
+        
+        // Back button - from step 2 to step 1
+        document.getElementById('back-btn').addEventListener('click', function() {
+            currentStep = 1;
+            showStep(1);
+        });
+
+        // Booking form handling to WhatsApp
+        document.querySelector('#booking-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const date = formData.get('date');
+            const time = formData.get('time');
+            const guests = formData.get('guests');
+            const eventType = formData.get('event_type');
+
+            // Get selected dishes
+            const selectedDishes = [];
+            document.querySelectorAll('input[name="dish"]:checked').forEach(checkbox => {
+                selectedDishes.push(checkbox.value);
+            });
+
+            const dishesText = selectedDishes.length > 0 ? `\n\n🍽️ Menú Seleccionado:\n- ${selectedDishes.join('\n- ')}` : '\n\n🍽️ Menú: Sin selección específica';
+
+            const message = encodeURIComponent(
+                `¡Hola Pilamo! 👋 Deseo realizar una reserva para un evento:\n\n` +
+                `👤 Nombre: ${name}\n` +
+                `📅 Fecha: ${date}\n` +
+                `⏰ Hora: ${time}\n` +
+                `👥 Invitados: ${guests}\n` +
+                `🎯 Evento: ${eventType}` +
+                dishesText
+            );
+
+            const phoneNumber = '573000000000'; // Real number should be here
+            window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+        });
+
+        // Scroll to sections from buttons
+        document.querySelectorAll('.scroll-to-booking').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelector('#booking').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        document.querySelectorAll('.scroll-to-gastronomy').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelector('#gastronomy').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        document.querySelectorAll('.scroll-to-events').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelector('#events').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        document.querySelectorAll('.scroll-to-suites').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelector('#suites').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // WhatsApp redirect for generic buttons (Suites & Generic contact)
+        document.querySelectorAll('.whatsapp-btn').forEach(btn => {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault();
+                const room = this.getAttribute('data-room');
+                let messageText = '¡Hola Pilamo! Me gustaría obtener más información o realizar una reserva.';
+
+                if (room) {
+                    messageText = `¡Hola Pilamo! 👋 Me gustaría reservar la *${room}*. ¿Podrían darme más detalles sobre disponibilidad?`;
+                }
+
+                const message = encodeURIComponent(messageText);
+                const phoneNumber = '573000000000';
+                window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+            });
+        });
+
+        // Book now button in header
+        document.querySelector('.book-now-btn').addEventListener('click', () => {
+            document.querySelector('#booking').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        // Active navigation link highlighting - improved version
+        window.addEventListener('scroll', function () {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = [
+                { id: 'home', el: document.getElementById('home') },
+                { id: 'services', el: document.getElementById('services') },
+                { id: 'gastronomy', el: document.getElementById('gastronomy') },
+                { id: 'suites', el: document.getElementById('suites') },
+                { id: 'booking', el: document.getElementById('booking') },
+                { id: 'contact', el: document.getElementById('contact') }
+            ];
+
+            let current = '';
+
+            sections.forEach(section => {
+                if (!section.el) return;
+                
+                const sectionTop = section.el.offsetTop;
+                const sectionHeight = section.el.clientHeight;
+                const scrollPosition = window.scrollY + 100; // 100px offset for header
+
+                // Check if current scroll position is within this section
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    current = section.id;
+                }
+            });
+
+            // Update all nav links
+            navLinks.forEach(link => {
+                link.classList.remove('text-primary');
+                const href = link.getAttribute('href');
+                if (href === `#${current}`) {
+                    link.classList.add('text-primary');
+                }
+            });
+        });
+
+        // Scroll Reveal Observer
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section, .menu-item, .suite-card').forEach(el => {
+            el.classList.add('reveal');
+            revealObserver.observe(el);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.glass-nav {
+    background: rgba(10, 15, 11, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(23, 207, 54, 0.1);
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.hero-gradient {
+    background: linear-gradient(rgba(10, 17, 11, 0.3) 0%, rgba(10, 17, 11, 0.9) 100%);
+}
+
+.room-card:hover .room-overlay {
+    opacity: 1;
+}
+
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+.font-display {
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #1a2e1d;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #17cf36;
+    border-radius: 10px;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
